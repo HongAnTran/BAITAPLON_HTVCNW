@@ -3,7 +3,7 @@
     /*******color*******/
     --color-primary: #ff4500;
     --color-secondary: #da4109;
-    --color-primary-text: #333;
+    --color-primary-text: #10304c;
     --color-secondary-text: #1c1c1c;
     --white-color: #fff;
     --black-color: #000;
@@ -31,6 +31,7 @@
     --mb-20:2rem;
     --mb-10:1rem;
 
+    --height-header: 126px;
 
 }
 
@@ -38,15 +39,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 html{
     font-family: var(--font-primary);
+
+    
     font-size: 62.5%;
+
+
 }
 
 .section{
     margin-bottom: var(--mb-30);
+}
+
+.margin-header{
+    margin-top:var(--height-header);
 }
 a{
     text-decoration: none;
@@ -57,4 +67,86 @@ ul{
 img{
     width: 100%;
     height: auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: var(--radius-third);
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: var(--font-text);
+    font-weight: var(--font-weight-first);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.btn.primary {
+    background-color: var(--color-primary);
+    color: var(--white-color);
+}
+.product{
+    min-height: 480px ;
+    max-height: 480px ;
+}
+.product__item{
+display: flex;
+flex-direction: column;
+
+}
+.product__image{
+    position: relative;
+
+}
+.product__image-main{
+transition: all 0.3s ease-in-out;
+}
+.product__image-more{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+}
+.product__item:hover .product__image-more{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+
+
+}
+.product__item:hover .product__image-main{
+    opacity: 0;
+
+
+    }
+.product__info{
+    padding: 20px 0;
+}
+.product__info-name h3{
+    margin: 0 0 5px;
+    position: relative;
+    min-height: 18px;
+}
+.product__info-name a{
+    line-height: 16px;
+    overflow: hidden;
+    font-size: 1.6rem;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    color: var(--color-primary-text);
+
+    font-weight: 400;
+   
+}
+.product__info-price{
+font-size: 1.5rem;
 }
