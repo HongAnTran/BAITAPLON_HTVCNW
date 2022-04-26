@@ -1,15 +1,89 @@
-.color__text{
-    color: #ff9f00 !important;
+.header{
+    padding: 16px 20px;
+    background-color:transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color:rgba(40, 40, 40, 0.75) !important;
+    transition: all 0.2s ease-in;
 }
 
+.header.extend {
+    padding: 10px 20px 0px 20px;
+}
 
+.header__wrap{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
 
+.header__icon{
+    width: 2.5rem;
+    cursor: pointer;
+}
 
+.header__left{
+    display: flex;
+    align-items:center;
+    width: 20%;
+}
 
+.header__icon:nth-child(1){
+    margin-right: 12px;
+}
 
+.header__mid{
+    width: 60%;
+}
 
+.header__mid-logo{
+    text-align: center;
+}
+.header__right a{
+    text-decoration: none;
+}
+.header__right{
+    width: 20%;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+}
 
+.header__right-sign{
+    font-size: 1.6rem;
+    color: var(--white-color);
+    margin-right: 12px;
+}
 
+.header__menu{
+margin-top: 6px;
+}
+
+.menu__list{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.menu__item{
+    padding: 10px 25px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.menu__link{
+    color:var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #ff9f00;
+    text-decoration: none;
+}
 
 .menu__link:hover{
     color: #ff9f00;
@@ -42,47 +116,103 @@
     display: block;
 }
 
-.introduction {
+.sign_in{
     margin: 200px; 
     margin-top: 135px;
+    margin-bottom: 30px;
 }
 
-.introduction__nav-menu{
-    padding-bottom: 50px;
-}
+.sign_in_nav{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}   
 
-.introduction__nav-item{
-    padding: 5px 15px;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-}
-
-.introduction__nav-link{
-    color:var(--black-color);
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+.sign_in_nav ul{
     text-decoration: none;
+    word-spacing: 1px;
 }
 
-.introduction__nav-link:hover{
+.sign_in_nav li{
+    display: inline;
+}
+
+.sign_in_item{
+    font-size: 1.5rem;
+    display: inline;
+    text-decoration: none;
+    color:var(--black-color);
+    word-spacing: 1px;
+}
+
+.sign_in_nav h1{
+    font-size: 1.5rem;
+    display: inline;
+    text-decoration: none;
+    color:var(--black-color);
+    word-spacing: 1px;
+}
+
+.sign_in_item:hover{
     color: #ff9f00;
 }
 
-.introduction__content{
-    margin-left: 34px;
+.sign_in_account h1{
+    text-align: center;
+    font-size: 3rem;
 }
 
-.introduction__content a{
+.sign_in_account p{
+    text-align: center;
+    font-size: 1.5rem;
+    word-spacing: 1px;
+}
+
+form{
+    font-size: 2rem;
+}
+
+.form_group{
+    margin: 20px 400px;
+}
+
+.button {
+    background-color:var(--black-color);
+    border: none;
+    color: white;
+    padding: 13px 13px;
+    text-align: center;
     text-decoration: none;
-    font-size: 2.5rem;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 700px;
+}
+
+.form_text{
+    margin: 20px 400px;
+    text-align: center;
+    font-size: 1.5rem;
+    word-spacing: 1px;
+}
+
+.form_text a{
+    color: #ff9f00;
+    text-decoration: none;
+}
+
+.form_text a:hover{
     color: var(--black-color);
 }
 
-.introduction__content p{
-    font-size: 1.5rem;
+.col{
+    float: left;
+}
+
+.row-1{
+    margin: 20px 400px;
+    display: flexbox;
 }
 
 footer{
@@ -104,6 +234,8 @@ footer{
     color: var(--white-color);
     font-size: 2rem;
 }
+
+
 
 .footer__mid{
     margin-top: 8%;
@@ -225,5 +357,3 @@ footer{
 .msg-receive:hover, .msg-send:hover{
 	opacity: .9;
 }
-
-
