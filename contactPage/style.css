@@ -1,0 +1,29 @@
+.widthContent {
+    max-width: 500px;
+}
+
+.box-info-contact li {
+    margin-bottom: 12px;
+}
+
+.box-info-contact li p {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    color: #666;
+    font-weight: 500;
+}
+
+.input-group{
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    
+}
+
+.input-group input{
+    outline: none;
+    padding:10px 10px;
+  width: 100%;
+    
+}

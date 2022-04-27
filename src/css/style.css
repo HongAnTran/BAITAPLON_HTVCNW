@@ -106,7 +106,28 @@ padding:4px
 .product__image{
     position: relative;
     overflow: hidden;
-    
+    max-height: 500px;
+  
+}
+
+.product-isSale::before{
+    content: attr(data-sale);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 3;
+    padding: 10px 0 0;
+    border-radius: 0 0 15px 15px;
+    height: 45px;
+    text-align: center;
+    width: 45px;
+    line-height: 13px;
+    color: #fff;
+    background-image: url(../img/download.svg);
+    font-weight: bold;
+    font-size: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .product__image-main{
 transition: all 0.3s ease-in-out;
@@ -139,7 +160,7 @@ transition: all 0.3s ease-in-out;
 
     }
 .product__info{
-    padding: 20px 0;
+    padding: 12px 0;
     text-align: center;
 }
 .product__info-name h3{
@@ -160,14 +181,86 @@ transition: all 0.3s ease-in-out;
    
 }
 
+.product__bot-action{
+    /* display: flex; */
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: -37px;
+    left: 0;
+    right: 0;
+    -webkit-transition: all 0.15s;
+    transition: all 0.15s;
+}
+
+.product__cart,
+.product__like{
+    color:var(--white-color);
+font-size:2rem;
+padding:4px 8px;
+background-color: var(--color-primary);
+border-radius:4px;
+cursor: pointer;
+}
+
+
+.product__cart{
+margin-left: 6px;
+
+}
+
+.product__cart:hover,
+.product__like:hover{
+ filter: brightness(0.9);   
+}
+.product__buy{
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color:var(--white-color);
+    font-size:1.6rem;
+border-radius:4px;
+
+padding: 4px 10px;
+
+}
+.product__bot-action-left{
+    display: flex;
+}
 .product__info-name a:hover{
     color: var(--color-primary);
   
 }
 .product__info-price{
 font-size: 1.5rem;
+position: relative;
+    height: 32px;
+    overflow: hidden;
+}
+.price-text{
+    color: #eb3e32;
+    line-height: 1.3;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding-right: 0px;
+    height: 37px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    -webkit-transition: all 0.15s;
+    transition: all 0.15s;
 }
 
+.product__info:hover .price-text{
+    transform: translateY(-40px);
+}
+
+.product__info:hover .product__bot-action{
+    transform: translateY(-37px);
+}
 /* .header__mid-logo a img{
     max-height: 50px;
     width: 180px;
@@ -254,11 +347,12 @@ margin-top: 6px;
     padding: 10px 25px;
 
     text-align: center;
+    position: relative;
   
 }
 .menu__link{
     color:var(--white-color);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -269,4 +363,110 @@ margin-top: 6px;
 .menu__link:hover{
     color:var(--color-primary);
    
+}
+
+
+.sub-menu{
+    position: absolute;
+    top: calc(100% + 16px);
+    left: -28px;
+    right: 0;
+
+    background-color: var(--white-color);
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    max-height: 0;
+    transition: all 0.4s linear;
+    overflow: hidden;
+}
+
+.menu__item:hover .sub-menu{
+    max-height: 1000px;
+    transition: all 0.4s linear;
+
+
+}
+.sub-menu__item{
+padding: 14px 25px;
+border-bottom: 1px solid var(--color-secondary-text);
+cursor: pointer;
+}
+
+.sub-menu__item:hover{
+
+ background-color:var(--black-color);
+    
+    }
+
+    .sub-menu__item:hover .sub-menu__title{
+
+        color: var(--color-primary);
+           
+           }
+.sub-menu__link{
+
+}
+.sub-menu__title{
+color: var(--black-color);
+
+
+font-size: 1.4rem;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+}
+
+
+footer{
+    background-color: var(--black-color);
+    width: 100%;
+    /* height: 400px; */
+    padding-bottom: 30px;
+}
+
+.container{
+    margin-top: 0px;
+}
+
+.row{
+    display: flex;
+    justify-content: start;
+}
+
+.container h2{
+    color: var(--white-color);
+    font-size: 2rem;
+}
+
+.footer__mid{
+    margin-top: 8%;
+}
+
+.footer__mid a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+.footer__mid a:hover{
+    color: var(--color-primary);
+}
+
+.footer__right{
+    display: flex;
+    align-items:center;
+}
+
+.footer__icon{
+    width: 3rem;
+    cursor: pointer;
+}
+
+.footer__icon:nth-child(1){
+    margin-right: 12px;
+}
+
+.footer__icon-tick{
+    padding-left: 10px;
 }

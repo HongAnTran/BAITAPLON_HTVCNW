@@ -85,57 +85,6 @@
     font-size: 1.5rem;
 }
 
-footer{
-    background-color: var(--black-color);
-    width: 100%;
-    height: 400px;
-}
-
-.container{
-    margin-top: 0px;
-}
-
-.row{
-    display: flex;
-    justify-content: start;
-}
-
-.container h2{
-    color: var(--white-color);
-    font-size: 2rem;
-}
-
-.footer__mid{
-    margin-top: 8%;
-}
-
-.footer__mid a{
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: var(--white-color);
-}
-
-.footer__mid a:hover{
-    color: #ff9f00;
-}
-
-.footer__right{
-    display: flex;
-    align-items:center;
-}
-
-.footer__icon{
-    width: 3rem;
-    cursor: pointer;
-}
-
-.footer__icon:nth-child(1){
-    margin-right: 12px;
-}
-
-.footer__icon-tick{
-    padding-left: 10px;
-}
 
 .chat-box{
 	position: fixed;
