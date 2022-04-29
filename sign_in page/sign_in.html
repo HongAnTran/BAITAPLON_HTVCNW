@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tài Khoản-Sunny</title>
     <link rel="shortcut icon" href="../src/img/SUNNY_LOGO.ico">
+
+    
+    <link  rel="stylesheet" href="../src/bootraps/css/bootstrap.css" >
+    <link rel="stylesheet" href="../src/bootraps/css/bootstrap.min.css" >
+    <link  rel="stylesheet" href="../src/bootraps/css/bootstrap-reboot.css" >
+   
     <link href="../src/css/style.css" rel="stylesheet" type="text/css"/>
     <link href="./index.css" rel="stylesheet" type="text/css"/>
     <link
@@ -18,19 +24,19 @@
       integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"/>
-</head>
 
+</head>
 <header class="header">
   <div class="header__wrap">
     <div class="header__left">
       <div class="header__icon">
           <a href="https://www.facebook.com/anhong0175/" target="_blank" rel="noopener">
-              <img src="../src/img/facbook_icon.png" />
+              <img src="./src/img/facbook_icon.png" />
           </a>
       </div>
       <div class="header__icon">
           <a href="https://www.instagram.com/tran_hongan_30/" target="_blank" rel="noopener">
-              <img src="../src/img/insta_icon.png" />
+              <img src="./src/img/insta_icon.png" />
           </a>
       </div>
     </div>
@@ -43,7 +49,7 @@
       <div class="header__menu">
           <ul class="menu__list">
             <li class="menu__item">
-                <a href="#" class="menu__link">SẢN PHẨM
+                <a href="./productsPage/index.html" class="menu__link">SẢN PHẨM
                   <i class="fa-solid fa-caret-down" style="color:#fff; font-size:2rem;margin-left:6px"></i>
 
                 </a>
@@ -78,35 +84,35 @@
             </li>
             <li class="menu__item">
 
-              <a href="../collectionPage/index.html" class="menu__link">BỘ SƯU TẬP</a>
+              <a href="./collectionPage/index.html" class="menu__link">BỘ SƯU TẬP</a>
             </li>
             <li class="menu__item">
 
-              <a href="../introductionPage/introduction.html" class="menu__link">GIỚI THIỆU</a>
+              <a href="./introductionPage/introduction.html" class="menu__link">GIỚI THIỆU</a>
             </li>
             <li class="menu__item">
 
-              <a href="../newsPage/index.html" class="menu__link">TIN TỨC</a>
+              <a href="./newsPage/index.html" class="menu__link">TIN TỨC</a>
             </li>
             <li class="menu__item">
 
-              <a href="../contactPage/indedx.html" class="menu__link">LIÊN HỆ</a>
+              <a href="./contactPage/indedx.html" class="menu__link">LIÊN HỆ</a>
             </li>
           </ul>
         </div>
     </div>
     <div class="header__right" >
-        <a  href="../sign_in page/sign_in.html">
+        <a  href="./sign_in page/sign_in.html">
           <div class="header__right-sign">
               <span>Sign in</span>
             </div>
         </a>
       <div>
           
-        <img class="header__icon" src="../src/img/tui_icon.png" />
+        <img class="header__icon" src="./src/img/tui_icon.png" />
       </div>
       <div>
-        <img class="header__icon" src="../src/img/timkiem_icon.png" />
+        <img class="header__icon" src="./src/img/timkiem_icon.png" />
       </div>
     </div>
   </div>
@@ -129,7 +135,9 @@
                 <label for=""> Email
                 <span class="required">*</span>
                 </label>
-                <input placeholder="Nhập Địa chỉ Email" type="email" class="form-control form-control-lg" value="" name="customer[email]" id="customer_email" required="">              
+                <input placeholder="Nhập Địa chỉ Email" type="email" class="form-control form-control-lg " value="" name="customer[email]" id="customer_email" required="">   
+                
+                <p class="message-error">Vui lòng nhập đúng trường này</p>
               </div>
 
               <div class="form_group">
@@ -138,8 +146,10 @@
                 </label>
                 <input placeholder="Nhập mật khẩu" type="password" class="form-control form-control-lg" value="" name="customer[password]" id="customer_password" required="">
               </div>
+              <div style="text-align:center">
+                <button type="submit" class="button" id="btnDangnhap">ĐĂNG NHẬP</button>
 
-              <button type="submit" class="button" id="btnDangnhap">ĐĂNG NHẬP</button>
+              </div>
 
               <div class="form_text">
                 <a href="../sign_in page/sign_in_forgot password.html">Quên mật khẩu?</a> 
@@ -203,7 +213,7 @@
           </div>
     </footer>
 
-
+    <script src="../src/js/sign_in.js" ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="../src/js/chatbox.js"></script>

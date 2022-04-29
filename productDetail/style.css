@@ -1,0 +1,93 @@
+.product__detail_content{
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+height: 100%;
+
+}
+.product__detail_name{
+margin-bottom: 10px;
+}
+
+.product__detail_name h3{
+    font-size: 2.4rem;
+    color:var(--color-primary-text);
+    font-weight: 600;
+
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+}
+.product__detail_price{
+    margin-bottom: 30px;
+
+}
+.product__detail_price h3{
+    font-size: 2rem;
+    color:var(--color-primary);
+    font-weight: bold;
+
+
+
+}
+.product__detail_description{
+    margin-bottom: 10px;
+
+
+}
+
+.product__detail_description span{
+    font-size:1.5rem;
+    color:var(--color-secondary-text);
+    font-weight: 400;
+    
+
+}
+.product__detail_quantity{
+margin-bottom: 20px;
+}
+.product__detail_quantity input{
+    width: 40px;
+    height: 40px;
+    padding: 14px;
+    outline: none;
+    }
+.product__detail_quantity button{
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-primary);
+    outline: none;
+    color: var(--white-color);
+    border:none;
+    cursor: pointer;
+
+}
+.product__detail_actions{
+margin-top: auto ;
+}
+
+.carousel-control-prev{
+}
+.carousel-control-prev-icon{
+    color: var(--white-color);
+    background-color: var(--color-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+
+}
+.carousel-control-next-icon{
+    color: var(--white-color);
+    background-color: var(--color-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+
+}
+.carousel-control-next{
+
+}
