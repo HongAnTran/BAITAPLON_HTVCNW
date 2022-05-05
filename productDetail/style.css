@@ -91,3 +91,11 @@ margin-top: auto ;
 .carousel-control-next{
 
 }
+
+.carousel-item{
+    max-height: 520px;
+}
+
+.carousel-item img{
+  object-fit: cover;
+}

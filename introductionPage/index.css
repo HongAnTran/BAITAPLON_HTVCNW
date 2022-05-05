@@ -176,3 +176,20 @@
 }
 
 
+
+
+.intro-member{
+	margin-top: 20px;
+}
+.intro-member-title h3{
+font-size: 2rem;
+font-weight: bold;
+}
+.intro-member-name span{
+
+font-size: 1.8rem;
+}
+.intro-member-mssv{
+	font-size: 1.8rem;
+
+}
